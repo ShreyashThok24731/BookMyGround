@@ -1,0 +1,14 @@
+#combine {
+    padding-top: 20px;
+    height: 94.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    /* background-image: url("../images/f1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.5; */
+  }
+  

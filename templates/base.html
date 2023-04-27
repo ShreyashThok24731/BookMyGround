@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> {% block title  %}{% endblock title  %} - Book My Ground</title>
+    {% block css %}{% endblock css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    {% block body %}{% endblock body %}
+  </body>
+</html>
+

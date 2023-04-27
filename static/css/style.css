@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #282727;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#home {
+  padding-top: 20px;
+  height: 94.2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items: center;
+  background-image: url("../images/home.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #010101;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#book-btn {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#book-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#booking {
+  display: none;
+  padding: 20px;
+  background-color: #1e1e1e;
+  background-image: url("../images/ground.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#booking h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:white;
+}
+
+#booking p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#booking select,
+#booking input[type="date"] {
+  padding: 4px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #9699fa;
+}
+
+.form-group{
+  color: white;
+}
+
+#slot-select {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.slot {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.slot:hover {
+  background-color: #9699fa;
+  color: black;
+}
+
+#price {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#book-slot {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#book-slot:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.5s ease; /* Adds a transition effect when the background color changes */
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #4caf50;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition: transform 0.1s ease-in-out; /* Adds a small animation when the button is clicked */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #008cba;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #005f6b;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+#contact {
+  padding-top: 20px;
+  height: 94.2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items: center;
+  background-image: url("../images/home.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #010101;
+}

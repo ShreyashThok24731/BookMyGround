@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+
+{% block body %}
+<section id="home">
+  <div class="container">
+    <h1>Welcome to Book My Ground</h1>
+    <button id="book-btn"> Book a Ground </button>
+  </div>
+</section>
+
+<script src="{% static 'js/script.js' %}"></script> 
+{% endblock body %}
+
