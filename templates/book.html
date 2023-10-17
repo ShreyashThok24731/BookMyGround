@@ -1,16 +1,40 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking The Slot</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
 
-{% block title %} Book {% endblock title %}
-
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/book.css' %}">
-{% endblock css %}
-
-{% block body %}
-<section id='combine'> 
-<br> 
-<b> booking... </b>     
-</section>
-
-{% endblock body %}
+</head>
+<body> 
+  <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+   </nav>
+  <h1>Choose Your City</h1>
+  <section>
+    <div class="content">
+        <a href="/pune1"><img src="static/images/pune.png"></a>
+        <h3>Pune</h3>
+    </div>
+    <div class="content">
+        <a href="/pune1"><img src="static/images/mumbai.png"></a>
+        <h3>Mumbai</h3>
+    </div>
+    <div class="content">
+        <a href="/pune1"><img src="static/images/dehli.png"></a>
+        <h3>Dehli</h3>
+    </div>
+    <div class="content">
+        <a href="/pune1"><img src="static/images/bengaluru.png"></a>
+        <h3>Bengaluru</h3>
+    </div>
+  </section>
+</body>
+</html>

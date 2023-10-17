@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Select Ground</title>
+ {% load static %}
+ <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/pune1.css' %}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="{% url 'logout' %}" >Logout</a></li>
+        </ul>
+   </nav>
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="static/images/img1.jpeg">
+</div>
+<div class="title">
+    <h2>Kick Off Arena</h2>
+    <ion-icon name="location-outline"></ion-icon>
+    <a href="https://goo.gl/maps/ATexKXkFX9vrDGda6">location</a>
+</div>
+<div class="des">
+ <p class="p-trunc">Shivaji Nagar Model Colony, Pune</p>
+ <button class="btn" id="book-now1">Book Now!!</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img2.jpg">
+   </div>
+   <div class="title">
+       <h2>Futsal 5</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/qk4jrWjMxS4WgaMz8">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc"> Khilarewadi, Erandwane, Pune</p>
+    <button class="btn" id="book-now2">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img3.webp">
+   </div>
+   <div class="title">
+       <h2>Turf 11</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/fkAmuKPCfJtJda1q6">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Kothrud Industrial Area, Pune</p>
+    <button class="btn" id="book-now3">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img4.jpg">
+   </div>
+   <div class="title">
+       <h2>The Foothill Arena</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/62Kie2ZN9XKnwAik8">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Paud road behind MIT College</p>
+    <button class="btn" id="book-now4">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img5.jpg">
+   </div>
+   <div class="title">
+       <h2>High Turf F.C.</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/CzpyQJZWMtcb18Mg7">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Kishkinda Nagar, Kothrud, Pune</p>
+    <button class="btn" id="book-now5">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img6.jpg">
+   </div>
+   <div class="title">
+       <h2>HotFut</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/h5VYpUiQfYKLkvKM8">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Shankar Sheth Rd,Vrindavan Society,Pune</p>
+    <button class="btn" id="book-now6">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img7.jpg">
+   </div>
+   <div class="title">
+       <h2>Admark Turf</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/YWRBEpYKnPgcov6e6">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Rambaug Colony, Kothrud, Pune,</p>
+    <button class="btn" id="book-now7">Book Now!!</button>
+   </div>
+   </div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="static/images/img8.webp">
+   </div>
+   <div class="title">
+       <h2>Greenbox Turf MIT</h2>
+       <ion-icon name="location-outline"></ion-icon>
+       <a href="https://goo.gl/maps/ottx1tpdex8UoyxeA">location</a>
+   </div>
+   <div class="des">
+    <p class="p-trunc">Shilpa Housing Society, Kothrud, Pune</p>
+    <button class="btn" id="book-now8">Book Now!!</button>
+   </div>
+   </div>
+
+<script>
+    // Get a reference to the button element
+    const bookButton1 = document.getElementById("book-now1");
+      
+    // Add a click event listener to the button
+    bookButton1.addEventListener("click", function() {
+        // Redirect the user to the "bookslot.html" page
+        window.location.href = "payment";
+    });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton2 = document.getElementById("book-now2");
+     
+   // Add a click event listener to the button
+   bookButton2.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton3 = document.getElementById("book-now3");
+     
+   // Add a click event listener to the button
+   bookButton3.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton4 = document.getElementById("book-now4");
+     
+   // Add a click event listener to the button
+   bookButton4.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton5 = document.getElementById("book-now5");
+     
+   // Add a click event listener to the button
+   bookButton5.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton6 = document.getElementById("book-now6");
+     
+   // Add a click event listener to the button
+   bookButton6.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton7 = document.getElementById("book-now7");
+     
+   // Add a click event listener to the button
+   bookButton7.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script>
+   // Get a reference to the button element
+   const bookButton8 = document.getElementById("book-now8");
+     
+   // Add a click event listener to the button
+   bookButton8.addEventListener("click", function() {
+       // Redirect the user to the "bookslot.html" page
+       window.location.href = "payment";
+   });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

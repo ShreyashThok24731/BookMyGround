@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounds In Pune</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pune.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="{% url 'logout' %}" >Logout</a></li>
+        </ul>
+   </nav>
+    <div class="container">
+        <div class="course">
+            <div class="preview">
+                <h2>Kick Off Arena</h2>
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://goo.gl/maps/ATexKXkFX9vrDGda6">location</a>
+            </div>
+            <div class="info">
+                <div class="progress-wrapper">
+                    <div class="progress"></div>
+                    <span class="progress-text">4/9 Challenges</span>
+                </div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <h2>Kick Off Arena</h2>
+                <p class="p-trunc">Shivaji Nagar Model Colony, Pune</p>
+                <button class="btn" id="book-now">Book Now!!</button>
+            </div>
+        </div>
+    <div class="course">
+            <!-- Add additional card content here -->
+            <div class="preview">
+                <h2>Kick Off Arena</h2>
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://goo.gl/maps/ATexKXkFX9vrDGda6">location</a>
+            </div>
+            <div class="info">
+                <div class="progress-wrapper">
+                    <div class="progress"></div>
+                    <span class="progress-text">4/9 Challenges</span>
+                </div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <h2>Kick Off Arena</h2>
+                <p class="p-trunc">Shivaji Nagar Model Colony, Pune</p>
+                <button class="btn" id="book-now">Book Now!!</button>
+            </div>
+            
+    </div>
+    <div class="course">
+            <!-- Add additional card content here -->
+            <div class="preview">
+                <h2>Kick Off Arena</h2>
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://goo.gl/maps/ATexKXkFX9vrDGda6">location</a>
+            </div>
+            <div class="info">
+                <div class="progress-wrapper">
+                    <div class="progress"></div>
+                    <span class="progress-text">4/9 Challenges</span>
+                </div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <h2>Kick Off Arena</h2>
+                <p class="p-trunc">Shivaji Nagar Model Colony, Pune</p>
+                <button class="btn" id="book-now">Book Now!!</button>
+            </div>
+    </div>
+    <div class="course">
+            <!-- Add additional card content here -->
+            
+    </div>
+    </div>
+    
+    <script>
+        // Get a reference to the button element
+        const bookButton = document.getElementById("book-now");
+          
+        // Add a click event listener to the button
+        bookButton.addEventListener("click", function() {
+            // Redirect the user to the "bookslot.html" page
+            window.location.href = "payment";
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     
+</body>
+</html>

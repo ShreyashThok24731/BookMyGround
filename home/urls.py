@@ -20,8 +20,12 @@ from home import views
 
 urlpatterns = [
     # if request with empty path then send to views.index and set path name as 'home'
-    path('', views.index, name='home'),
-    path('contact', views.contact, name='contact'),
+    path('', views.signup, name='signup'),
+    path('home', views.home, name='home'),
+    path('pune', views.pune, name='pune'),
+    path('pune1', views.pune1, name='pune1'),
     path('login', views.login, name='login'),
+    path('payment', views.payment, name='payment'),
     path('book', views.book, name='book'),
+    path('logout/', views.LogoutPage, name='logout'),
 ]

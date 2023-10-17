@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/payment.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <title>Booking The Slots</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="{% url 'logout' %}" >Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section id="booking">
+        <div class="container">
+            <h2>Book a Ground</h2>
+            <div class="booking-form">
+                <form method="post" action="/payment">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="ground">Select a Ground:</label>
+                        <select id="ground" name="ground" required>
+                            <option value="ground1">Ground 1</option>
+                            <option value="ground2">Ground 2</option>
+                            <option value="ground3">Ground 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Select a Date:</label>
+                        <input type="date" id="date" name="date" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="time_slot">Select a Time Slot:</label>
+                        <div id="slot-select">
+                            <input type="radio" id="slot1" name="time_slot" value="4:00 PM - 5:00 PM" required>
+                            <label for="slot1">4:00 PM - 5:00 PM</label><br>
+                            <input type="radio" id="slot2" name="time_slot" value="5:00 PM - 6:00 PM" required>
+                            <label for="slot2">5:00 PM - 6:00 PM</label><br>
+                            <input type="radio" id="slot3" name="time_slot" value="6:00 PM - 7:00 PM" required>
+                            <label for="slot3">6:00 PM - 7:00 PM</label><br>
+                            <!-- Add more time slot options as needed -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p id="price">Price: Rs. 500</p>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Book Slot</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
