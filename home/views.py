@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from datetime import datetime
+from home.models import Contact
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
@@ -11,6 +12,20 @@ from django.contrib.auth.decorators import login_required
 
 def home(request):
     return render(request, 'home.html')
+
+
+def contact(request):
+    if request.method == "POST":
+        Firstname = request.POST.get('Firstname')
+        Lastname = request.POST.get('Lastname')
+        Email = request.POST.get('Email')
+        Mobile = request.POST.get('Mobile')
+        Desc = request.POST.get('Desc')
+        contact = Contact(Firstname=Firstname, Lastname=Lastname,
+                          Mobile=Mobile, Desc=Desc, Email=Email, Date=datetime.today())
+        contact.save()
+        messages.success(request, "Profile details updated.")
+    return render(request, 'contact.html')
 
 
 def payment(request):

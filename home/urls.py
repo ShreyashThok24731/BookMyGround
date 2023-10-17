@@ -24,6 +24,7 @@ urlpatterns = [
     path('home', views.home, name='home'),
     path('pune', views.pune, name='pune'),
     path('pune1', views.pune1, name='pune1'),
+    path('contact', views.contact, name='contact'),
     path('login', views.login, name='login'),
     path('payment', views.payment, name='payment'),
     path('book', views.book, name='book'),
